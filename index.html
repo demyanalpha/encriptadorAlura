@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="es">
+	
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Encriptador Alura</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+	<script src="code.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="titulo">
+			<img class="logo" src="img/logo.png" alt="Logo de Alura">
+			<h1>Codificador Alura</h1>
+			<br>
+		</div>
+	</header>
+
+	<main>
+		<section class="cajas">
+			<textarea id="entrada" required placeholder="Ingrese el texto a encriptar aquí"></textarea>
+			<img class="flechas" src="img/flechas.svg" alt="Flechas de izquierda y derecha">
+			<textarea id="salida" required placeholder="Ingrese el texto a desencriptar aquí"></textarea>
+		</section>
+
+		<section class="clipboard">
+			<table class="tabla">
+				<tr>
+					<td class="ti"><img class="clip" src="img/clip.svg" onclick="copiar0()"></td>
+					<td><p class="copy">Copiar texto desencriptado</p></td>
+					<td class="ti"><img class="clip" src="img/clip.svg" onclick="copiar1()"></td> <!-- Ya no supe como hacer para no repetir la funcion -->
+					<td><p class="copy">Copiar texto encriptado</p></td>
+				</tr>
+			</table>
+			
+				
+		</section>
+
+		<section class="foot">
+			<p><img src="img/signo.png" alt="Signo de admiración"> La aplicación solo acepta minúsculas sin acentos.</p>
+		</section>
+
+		<section class="botones">
+			<button onclick="codificar()" class="encriptar">Encriptar</button>
+			<img class="flechas" src="img/flechas.svg">
+			<button onclick="decodificar()" class="desencriptar">Desencriptar</button>
+		</section>
+		
+	</main>
+
+	<footer>
+		<div class="pie">
+			<p>&copy Copyright Damián Piña 2023</p>
+		</div>
+	</footer>
+
+</body>
+</html>

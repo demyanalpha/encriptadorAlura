@@ -1,0 +1,105 @@
+body{
+	font-family: 'Roboto Mono', monospace;
+	background: #F3F5FC;
+	background-image: url(img/code.png);
+	background-position: right bottom;
+  	background-repeat: no-repeat;
+}
+
+.titulo, .cajas, .foot, .botones{
+	display: flex;
+	align-items: center;
+	width: 95%;
+	justify-content: center;
+	margin: 10px 0px;
+}
+
+.logo{
+	padding: 0px 10px;
+}
+
+textarea{
+	width: 40%;
+	height: 150px;
+	resize: none;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.flechas{
+	width: 20px;
+}
+
+.foot{
+	font-size: 12px;
+}
+
+.tabla{
+	width: 82%;
+	margin: auto;
+}
+
+.ti{
+	width: 35px;
+}
+
+.clip{
+	margin: 0px 5px;
+	width: 20px;
+	align: right;	
+}
+
+.clip:hover{
+	cursor: pointer;
+	transform: scale(1.5);
+}
+
+.copy{
+	text-align: left;
+	font-size: 12px;
+
+}
+
+.encriptar{
+	width: 130px;
+	padding: 10px;
+	margin: 5px;
+	font-size: 10px;
+	color: white;
+	background: #0A3871;
+	border-width: thin;
+	border-style: solid;
+	border-color: #0A3871;
+	border-radius: 10px;
+}
+
+.encriptar:hover{
+	cursor: pointer;
+	transform: scale(1.05);
+}
+
+.desencriptar{
+	width: 130px;
+	padding: 10px;
+	margin: 5px;
+	font-size: 10px;
+	color: #0A3871;
+	background: #D8DFE8;
+	border-width: thin;
+	border-style: solid;
+	border-color: #0A3871;
+	border-radius: 10px;
+}
+
+.desencriptar:hover{
+	cursor: pointer;
+	transform: scale(1.05);
+}
+
+.pie{
+	position: fixed;
+	bottom: 5px;
+	left: 10px;
+	font-size: 10px;
+}
